@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+a.danji {
+  width: 800px;
+  height: 340px;
+  display: block;
+  background: rgba(1, 182, 1, 0.8);
+  border: 3px solid black;
+  position: relative;
+  background-image: 
+    url('../img/banana-cf-600.gif');
+  background-position: right;
+  background-size: contain, cover;
+  background-repeat: no-repeat;
+}
+.danji:hover {
+  cursor: url(../img/danji-milk-icon50.png) 20 30, auto;
+}
+
+.logo {
+  position: absolute;
+  top: 250px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.btn {
+  width: 100px;
+  position: relative;
+  top: 50px;
+  left: 300px;
+  background-color: rgb(242, 222, 48, 0.3);
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  font-weight: 600;
+  overflow: hidden;
+  color: white;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+#btn-br:after {
+  display: block;
+  content: "저기 여기 \A커서좀 대봐유";
+  white-space: pre;
+}
+
+#btn-br:hover:after {
+  content: "단지맛은 없다.";
+}
+
+
