@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex layout</title>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    /*부모에 display: flex*/
+    .container {
+      background: lightblue; 
+    }
+
+   .row {
+    display: flex;
+      /*
+        주축(main-axis)을 변경
+        반대편은 cross-axis
+        row(가로 기본) | colum(세로)
+      */
+      flex-direction: row;
+   }
+
+    .container-colum {
+      background: lightgreen;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .col {
+      outline: 1px solid black;
+      padding: 20px;
+      width: 100px;
+      background-color: orange;
+    }
+
+
+  </style>
+</head>
+<body>
+  
+    <h1>flex-direction 기본(row)</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col">1.col</div>
+        <div class="col">2.col</div>
+        <div class="col">3.col</div>
+      </div>
+    </div>
+    <h2>flex-direction 세로(colum)</h2>
+    <div class="container-colum">
+      <div class="col">1.col</div>
+      <div class="col">2.col</div>
+      <div class="col">3.col</div>
+    </div>
+  
+</body>
+</html>

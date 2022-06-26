@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+* {
+  /*margin: 0;
+  padding: 0;*/
+  box-sizing: border-box;
+}
+
+    .container {
+      background: #ccc;
+      /*부모에 flex*/
+      display: flex;
+      /*row(기본, 수평배치) | colum(수직배치)*/
+      flex-direction: column-reverse;
+    }
+
+    .container2 {
+      height: 400px;
+      margin-top: 20px;
+      background: #ccc;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .container3 {
+      margin-top: 20px;
+      background: #ccc;
+      height: 400px;
+      display: flex;
+      /*주축변경(가로): justify-content: start | center | end*/
+      justify-content: center;
+      justify-content: space-between;
+      justify-content: space-around;
+      
+      /*교차축변경(세로): align-items: 값동일*/
+      align-items: center;
+    }
+
+    .col {
+      width: 50%;
+      outline: 1px solid black;
+      padding: 30px;
+      background: pink;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="col">col1</div>
+    <div class="col">col2</div>
+  </div>
+
+  <div class="container2">
+    <div class="col">col1</div>
+    <div class="col">col2</div>
+    <div class="col">col3</div>
+    <div class="col">col4</div>
+  </div>
+
+  <div class="container3">
+    <div class="col">col5</div>
+  </div>
+</body>
+</html>

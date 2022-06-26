@@ -4,11 +4,51 @@
   box-sizing: border-box;
 }
 
+h2 {
+  position: relative;
+  top: -200px;
+  left: 255px;
+  color: green;
+  border: 5px solid black;
+  border-radius: 30%;
+  padding: 3px;
+}
 
-
-.rami {
-  outline: 2px solid black;
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  text-align: center;
+  
+}
+
+#img { 
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
+.rami {
+  width: 500px;
+  position: relative;
+  top: 65px;
+  left: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.num {
+  position: relative;
+  top: -45px;
+  right: 370px;
+  font-size: 40px;
+}
+
+.num2 {
+  position: relative;
+  top: -180px;
+  right: 255px;
+  font-size: 40px;
 }

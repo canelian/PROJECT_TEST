@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  background: pink;
+}
+
+h2 {
+  width: 20%;
+  position: relative;
+  top: 30px;
+  left: 200px;
+  color: lightgreen;
+  background: rgba(241, 100, 220, 0.3);
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 3px;
+}
+
+#img { 
+  border: 5px solid black;
+  border-radius: 50%;
+}
+
+.rami {
+  width: 500px;
+  position: relative;
+  top: 35px;
+  height: 80vh;
+}
+
+.num, .num2 {
+  font-size: 35px;
+  align-items: center;
+}
+
+.num {
+  position: relative;
+  top: -300px;
+  right: 75px;
+  background-color: rgba(145, 151, 154, 0.4);
+  border-radius: 8%;
+  margin-right: -6.5px;
+}
+
+.num2 {
+  position: relative;
+  top: -450px;
+  right: -110px;
+  background-color: rgba(145, 151, 154, 0.4);
+  border-radius: 8%;
+  margin-left: -6.5px;
+}

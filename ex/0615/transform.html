@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transform</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    section {
+      width: 200px;
+      height: 200px;
+      outline: 3px solid black;
+      /*overflow: hidden;*/
+      margin: 20px;
+    }
+
+    section:hover .trans {
+      transform: translate(200px, 0);
+    }
+
+    section:hover .rotate {
+      /* 각도값(0~365deg) */
+      transform: rotate(45deg);
+    }
+
+    section:hover .scale {
+      transform: scale(0.5, 0.5);
+      transform: scale(2, 0.5);
+      background: pink;
+    }
+
+    section:hover .skew {
+      /* 각도 deg */
+      transform: skew(-45deg, 45deg);
+    }
+    .box {
+      width: 200px;
+      height: 200px;
+      background: orange;
+      transition: 1s;
+    }
+
+  </style>
+</head>
+<body>
+  <!--
+    transform(x,y) 위치이동
+    rote() 회전
+    scale() 확대/축소
+    skewx(), skewY, skew() 비틀기
+  -->
+  <section>
+    <div class="trans box">tranlate 위치 이동</div>
+  </section>
+  <section>
+    <div class="rotate box">rotate 회전</div>
+  </section>
+  <section>
+    <div class="scale box">scale 확대/축소</div>
+  </section>
+  <section>
+    <div class="skew box">skew 비틀기</div>
+  </section>
+</body>
+</html>

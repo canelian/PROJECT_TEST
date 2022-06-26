@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date 객체</title>
+</head>
+<body>
+  <h1>Date 객체</h1>
+  <script>
+    let d = new Date;
+    console.log(d);
+    
+    // 년도
+    let year = d.getFullYear();
+    document.write('Years = ', year);
+
+    // 월(0 ~ 11)+1 보정값 필요
+    let month = d.getMonth();
+    document.write('<br>Month = ', month + 1);
+
+    // 일(1 ~ 31)
+    let date = d.getDate();
+    document.write('<br>Date = ', date);
+
+    // 오늘은 2022년 6월 17일입니다. 출력
+    document.write('<br>오늘은 ', year, month + 1, date);
+    
+    // 요일(0 ~ 6) 일요일부터
+    let day = d.getDay();
+    document.write('<hr><br>day = ', day);
+    
+    day=prompt(`오늘의 일자를 적으시오.`);
+    // 문자 요일로 변환하여 출력
+    if(day == 5) {
+      document.write(`일은 금요일입니다.`);
+    }
+
+    if(day == 6) {
+      document.write(`일은 토요일입니다.`);
+    }
+    
+    // getTime() 시간정보를 정규값으로 표시(ms 숫자)
+    let time = d.getTime();
+    // 1970년부터 몇년 지남?
+    document.write(`<hr><br> ${time / (1000*60*60*24*365)}`);
+
+    // 몇시
+    let hour = d.getHours();
+    document.write(`<br>현재시간은&nbsp;${hour}시`);
+
+    // 몇분
+    let min = d.getMinutes();
+    document.write(`&nbsp;${min}분`);
+
+    // 몇초
+    let sec = d.getSeconds();
+    document.write(`&nbsp;${sec}초&nbsp;입니다.`);
+    
+  </script>
+</body>
+</html>

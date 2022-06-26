@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightseagreen;
+  background-image: url(../img/cyber.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  width: 70%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 50px;
+  background-image: url('../img/hamster.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid white;
+  border-radius: 50px;
+  overflow: hidden;
+  font-family: 'digital7m', sans-serif;
+}
+
+@font-face {
+  font-family: 'digital7m';
+  src: url(../fonts/digital7m.ttf);
+}
+
+.clock, .watch, .ampm {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 50px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  text-shadow: 4px 4px 4px;
+}
+
+.clock {
+  position: relative;
+  top: -100px;
+  left: 150px;
+  background: rgba(135, 206, 250, 0.5);
+  border-radius: 30px;
+}
+
+.watch {
+  position: relative;
+  top: 0;
+  left: -150px;
+}
+
+.ampm {
+  position: relative;
+  top: -8%;
+  left: -35%;  
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fade-in</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      text-align: center;
+      color: white;
+    }
+    
+    .banner {
+      width: 400px;
+      height: 400px;
+      background: #666;
+      position: absolute;
+      top: 100px;
+      padding: 20px;
+    }
+
+    .banner h2 {
+      font-size: 30px;
+      animation-name: title;
+      animation-duration: 1s;
+      animation-delay: 2s;
+      opacity: 0;
+      /* 마지막 위치에서 고정되어 끝남 */
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes title {
+      0% {
+        opacity: 0;
+        transform: translateX(-500px);
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <h2>온라인 광고<br>이젠 고민하지 마세요</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic et quod voluptates culpa tenetur odit sed, officia molestiae doloremque voluptatum eius unde, distinctio nisi eum animi, libero amet assumenda. Doloribus.</p>
+  </div>
+</body>
+</html>
