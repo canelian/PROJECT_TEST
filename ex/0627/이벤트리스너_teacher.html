@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이벤트리스너.html</title>
+  <style>
+    .box1 {
+      width: 100px;
+      height: 100px;
+      border: 2px solid black;
+    }
+
+    .hover {
+      background: orange;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    // 문서가 로딩되면 실행(ready)되는 이벤트
+    window.onload = function(){
+      console.log('문서 로딩 완료')
+    }
+
+  </script>
+  <h2>이벤트 리스너 addEventListener()</h2>
+  <img
+    id="img1" 
+    src="https://via.placeholder.com/150/ff0" 
+    alt="1"
+  >
+  <script>
+    // addEventListener('이벤트명', function)
+    const img1 = document.getElementById('img1');
+    img1.addEventListener('click', function(){
+      // 이미지 읽기
+      let getImg1 = img1.getAttribute('src');
+      console.log(getImg1);
+      // 이미지 쓰기
+      img1.setAttribute('src', 'https://via.placeholder.com/150/f0f');
+    });
+  </script>
+
+  <h2>hover 이벤트 만들기</h2>
+  <p class="box1">box1</p>
+  <script>
+    // hover - mouseover, mouseout
+    // mouseover
+    const box1 = document.querySelector('.box1');
+    box1.addEventListener('mouseover', function(){
+      box1.classList.add('hover');
+    });
+
+    // mouseout
+    box1.addEventListener('mouseout', function(){
+      box1.classList.remove('hover');
+    });
+  
+  </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내장객체</title>
+  <style>
+    .red {
+      color: red;
+    }
+
+    .bg-red {
+      background-color: rgb(255, 32, 32);
+    }
+    
+    .box {
+      width: 200px;
+      height: 200px;
+      border: 2px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h1>dom 객체</h1>
+  <p id="para">문단 id para</p>
+  <p class="para">문단 class para</p>
+
+  <ul id="list">
+    <li>first</li>
+    <li>second</li>
+    <li>third</li>
+    <li>fourth</li>
+    <li>fifth</li>
+  </ul>
+  <script>
+    // id로 선택
+    let paraId = document.getElementById('para');
+    paraId.style.color = 'red';
+
+    // CSS selector 방식
+    let paraClass = document.querySelector('.para');
+    paraClass.style.color = 'blue';
+
+    // #list > li
+    // querySelector(선택자) - 대표 하나만 선택
+    let li = document.querySelector('#list li');
+    li.style.color = "green";
+
+    // querySelectorAll(선택자) - 여러개 선택
+    // 여러개중 지정하여 선택가능 단, 각각 [0 ~ ] 다 따로 처야된다.
+    // let lis = document.querySelectorAll('#list li')[1];
+    // lis.style.color = 'pink';
+
+    // 전체 선택
+    let lis = document.querySelectorAll('#list li');
+    for(let i = 0; i < lis.length; i++) {
+      console.log(lis[i]);
+      lis[i].style.color = 'orange';
+    }
+  </script>
+  <h2 id="h2El">setAttribute('속성명', '값') 속성 조작</h2>
+  <script>
+    const h2El = document.getElementById('h2El');
+    // set... 속성값 쓰기
+    h2El.setAttribute('class', 'red');
+
+    // get... 속성값 읽기
+    let getAtr = h2El.getAttribute('class');
+    console.log('getAtr = ', getAtr);
+  </script>
+
+  <h2>classList 클래스 추가, 삭제</h2>
+  <p class="box">box</p>
+  <button id="btn-add" onclick="bgRed()">add</button>
+  <button id="btn-remove" onclick="bgRemove()">remove</button>
+  <script>
+    function bgRed() {
+      // classList.add('클래스명')
+      const box = document.querySelector('.box');
+      box.classList.add('bg-red');
+    }
+
+    function bgRemove() {
+      // classList.remove('클래스명')
+      const box = document.querySelector('.box');
+      box.classList.remove('bg-red');
+    }
+  </script>
+</body>
+</html>
