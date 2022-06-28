@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>getDiveceInfo</title>
+</head>
+<body>
+  <h1>Device 정보 출력</h1>
+  <script>
+    let info = navigator.userAgent;
+    console.log(info);
+
+    // info정보에서 특정 키워드로 디바이스(OS) 확인
+    // 문자.indexOf('찾을문자') => 배열값 | -1(없음)
+    // 키워드: windows | machintosh | iphone | android
+    // let result = info.indexOf('windows');
+    // console.log(result);
+    if(info.indexOf('windows') != -1) {
+      document.write(`<br>OS: 윈도우`);
+    } else if(info.indexOf('windows') != -1) {
+      document.write(`<br>OS: 맥킨토시`);
+    } else if(info.indexOf('windows') != -1) {
+      document.write(`<br>OS: 아이폰`);
+    } else if(info.indexOf('windows') != -1) {
+      document.write(`<br>OS: 안드로이드`);
+    } else {
+      document.write(`<br>OS: 미확인`);
+    }
+
+    // 모니터 해상도 정보
+    let w = screen.width;
+    let h = screen.height;
+    document.write(`<br>해상도: 가로${w} x ${h}`);
+  </script>
+</body>
+</html>

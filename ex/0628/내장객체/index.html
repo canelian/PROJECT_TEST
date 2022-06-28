@@ -10,6 +10,10 @@
     .large-device {
       background-color: orange;
     }
+
+    body {
+      margin-bottom: 400px;
+    }
   </style>
 </head>
 <body>
@@ -51,6 +55,41 @@
     // paltform
     let paltform = navigator.platform;
     document.write(`<br>plaform = ${paltform}`);
+  </script>
+
+  <h2>location 객체</h2>
+  <script>
+    // 현재 위치(URL)
+    let url = location.href;
+    document.write(`<br>url = ${url}`);
+
+    function goNaver() {
+      lacation.href = "https://www.naver.com";
+    }
+  </script>
+  <button onclick="goNaver()">네이버가기</button>
+  <h2 id="result">someValu = <span></span></h2>
+  <script>
+    let someValu = "이 값은 일시적으로 메모리에 저장됨";
+    document.write(`<br>somevalu = ${someValu}`);
+    $('#result').html(someValu);
+    function changesomeValu() {
+      someValu = "값을 변경";
+      document.write(`<br>someValu = ${someValu}`);
+    }
+  </script>
+  <button onclick="changesomeValu()">값 변경</button>
+  <button onclick="location.reload()">새로고침</button>
+
+  <h2>모니터 해상도 정보</h2>
+  <script>
+    let screenWidth = screen.width;
+    let screenHeight = screen.height;
+    document.write(`<br>${screen.width}, ${screenHeight}`);
+
+    // 색상수
+    let colorDepth = screen.colorDepth;
+    document.write(`<br>colorDepth = ${colorDepth}`);
   </script>
 </body>
 </html>
