@@ -1,0 +1,241 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Open+Sans:wght@400;500;600&display=swap');
+
+/* 공통사항 */
+.list-page{margin:0 0 80px !important}
+.list-page.m06_page{margin:-50px 0 80px !important}
+.pagination-sm>li>a, .pagination-sm>li>span{border:0 !important}
+.list-wrap .pagination.board_page a, .view-wrap .pagination a{color:#999999 !important;font-family: 'Nanum Gothic', sans-serif;font-weight:700}
+.list-wrap .pagination.board_page .active a, .view-wrap .pagination .active a{color:#0b2a56 !important}
+.list-wrap .pagination.board_page .active a{position:relative}
+.list-wrap .pagination.board_page .active a::after{content:"";display:block;width:35%;height:1px;background:#193760;position:absolute;left:50%;transform:translateX(-50%);bottom:5px}
+.text-center .pagination>.active>a, .text-center .pagination>.active>span, 
+.text-center .pagination>.active>a:hover, .text-center .pagination>.active>span:hover, 
+.text-center .pagination>.active>a:focus, .text-center .pagination>.active>span:focus 
+.list-wrap .text-center .pagination .active a, .view-wrap .text-center .pagination .active a, 
+.board-list .list-wrap .pagination .active a, .view-wrap .pagination .active a,
+.pagination>li>a:hover, .pagination>li>span:hover, .pagination>li>a:focus, .pagination>li>span:focus{background-color:#fff !important;border-color:#fff !important}
+.inquiry_btn.btn.btn-color{background-color:#222222;border-color:#222222}
+
+
+/* 탑배너 */
+.sub_box{margin:55px 0 60px}
+.sub_box.bo_table{margin:55px 0 50px}
+.sub_box .container_fix{width:1440px}
+.sub_text{padding:0;}
+.sub_text h1{font-size:43px;color:#222222;font-weight:500;text-align:left}
+.sub_tab .sub_menu{float:left}
+.sub_tab .sub_menu .cate_ul{margin-top:37px}
+.sub_tab .sub_menu .cate_li{display:inline-block}
+.sub_tab .sub_menu .cate_li + .cate_li{margin-left:22px;padding-left:21px;position:relative}
+.sub_tab .sub_menu .cate_li + .cate_li::after{content:"";display:block;width:1px;height:15px;background:#a9a9a9;position:absolute;left:0;top:50%;transform:translateY(-50%)}
+.sub_tab .sub_menu .cate_li a{font-size:17px;color:#555555;font-weight:400}
+.sub_tab .sub_menu .cate_li.on a{color:#222222;font-weight:500}
+.sub_tab .sub_nav{float:right;margin-top:41px}
+.sub_tab .sub_nav li{display:inline-block;padding:0 5px;font-size:14px;color:#888888;font-weight:300}
+.sub_tab .sub_nav li:first-child{padding-left:0}
+.sub_tab .sub_nav li:last-child{padding-right:0;color:#222222;font-weight:400}
+.sub_tab .sub_nav li span{display:inline-block;padding-right:10px}
+.sub_tab .sub_nav li:last-child span{color:#888888}
+.sub_tab .sub_nav.nav_box{margin-top:0;position:absolute;right:15px;top:50%;transform:translateY(-50%)}
+
+/* 오시는 길 */
+.map_box{width:100%;position:relative}
+.map_iframe{width:1655px;max-width:100%;height:540px;float:right}
+.map_box .add_txt{width:300px;height:280px;position:absolute;right:17%;top:47%;transform:translateY(-50%);background:#0b2a56;
+display:flex;justify-content:center;flex-direction:column;padding-left:50px;box-shadow:0 19px 35px rgba(0,0,0,0.22)}
+.map_box .add_txt .add_icon{}
+.map_box .add_txt .add_cont{margin:20px 0 33px}
+.map_box .add_txt .add_cont h2{font-size:20px;color:#ffffff;font-weight:300;line-height:1.5}
+.map_box .add_txt .api_btn a{display:block;width:135px;height:40px;line-height:37px;border:1px solid #ffffff;border-radius:20px;font-size:13px;color:#fff;font-weight:400;font-family: 'Open Sans', sans-serif;
+background:url('/img/map_arrow.png') no-repeat;background-position:82% 50%;padding:0 25px}
+
+
+/* 학과활동 */
+.calender_table{margin-bottom:70px}
+.calender_table .calender-year-month{padding:0 49px}
+.calender_table .calender-year-month a{font-family: 'NanumSquare'; font-weight:600;font-size:32px;color:#222222}
+.calender_list .icon_box{margin-bottom:28px}
+.calender_list .icon_box .icon_ul{width:100%;text-align:right}
+.calender_list .icon_box .icon_ul .icon_li{display:inline-block;padding:0 10px;font-size:15px;color:#666666;font-weight:400}
+.calender_list .icon_box .icon_ul .icon_li:first-child{padding-left:0}
+.calender_list .icon_box .icon_ul .icon_li:last-child{padding-right:0}
+.calender_list .icon_box .icon_ul .icon_li span{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:5px}
+.calender_list .icon_box .icon_ul .icon_li .icon_01{background-color:#e93a5b}
+.calender_list .icon_box .icon_ul .icon_li .icon_02{background-color:#44b6d3}
+.calender_list .icon_box .icon_ul .icon_li .icon_03{background-color:#f9c53a}
+.calender_list .icon_box .icon_ul .icon_li .icon_04{background-color:#0b2a56}
+
+.schedule_calender th{border:1px solid #e1e1e1;font-size:16px;color:#222222;font-weight:400;padding:16px 18px}
+.schedule_calender th.sun{color:#eb4958}
+.schedule_calender th.sat{color:#3080f8}
+.schedule_calender td{border:1px solid #e1e1e1;padding:18px;font-size:15px;color:#222222;font-weight:300}
+.schedule_calender td a{font-size:14px;color:#666666;font-weight:300}
+.schedule_calender td a img{margin-right:5px}
+.schedule_calender td a.icon_a{display:inline-block;margin-top:24px}
+
+.schedule_box{margin-bottom:90px;border:1px solid #e1e1e1;background:#fbfbfb;padding:34px 35px;border-top:0;}
+.schedule_box h4{font-size:16px;color:#222222;font-weight:500}
+.schedule_box .today_schedule{margin-top:20px;font-size:15px;color:#666666;font-weight:400}
+
+
+/* 게시판 공통 */
+.board_style{}
+.board_style .list_tsearch.list-tsearch{border:0;background:#fff;padding:0;margin-bottom:40px}
+.board_style .list_tsearch .row-15{margin-left:0 !important;margin-right:0 !important}
+.board_style .list_tsearch .col-sm-offset-1{margin-left:0}
+.board_style .list_tsearch .col-15{padding-left:0 !important;padding-right:0 !important}
+.board_style .list_tsearch .form-group{margin-bottom:0 !important}
+.board_style .board_row{float:right;width:28.381%}
+.board_style .board_row input, .board_style .board_row select{border:1px solid #c2c2c2;box-shadow:0 0 0;-webkit-box-shadow:0 0 0;height:45px;line-height:45px;padding:0 17px}
+.board_style .tsearch_box01{width:32.26%}
+.board_style .tsearch_box01 select{font-size:15px;color:#666666;font-weight:400;background:url('/img/tsearch_arrow.png') no-repeat 90% 50%;-webkit-appearance:none;-moz-appearance:none;appearance:none}
+.board_style .tsearch_box02{width:64.52%;margin-left:3.22%;border:1px solid #c2c2c2;position:relative}
+.board_style .tsearch_box02 input{border:0;height:43px;line-height:43px}
+.board_style .tsearch_box02 .text_search{width:80%;}
+.board_style .tsearch_box02 button{width:auto;position:absolute;top:50%;transform:translateY(-50%);right:19px;background:#fff;height:auto;border:0;padding:0}
+.board_style .tsearch_box02 button:hover{background:#fff}
+
+.board_style .div-head{background:#ffffff;border-top:1px solid #222222;border-bottom:1px solid #e1e1e1;padding:16px 0}
+.board_style .div-head > span{font-size:16px;color:#222}
+.board_style .list-board .list-body li > div,
+.board_style .list-board .list-body li > div a{font-size:15px;color:#555555;font-weight:400}
+.board_style .list-board .list-body .wr-subject{padding-left:10px}
+.board_style .list-board .list-body li.bg-light{background-color:#fbfbfb}
+.board_style .list-board .list-body li.bg-light b{color:#222222;font-weight:500}
+
+/* 무용과 행사 */
+.m06_board .fix_gallery_content{margin-top:17px}
+.m06_board .fix_gallery_content h5{font-size:16px;color:#222222;font-weight:500}
+.m06_board .fix_gallery_content p{margin-top:15px;font-size:13px;color:#777777;font-weight:300}
+
+
+/* 공지사항 */
+.notice_style .list-board .wr-date{width:9%}
+.notice_style .list-board .wr-hit{width:6%}
+.notice_style .list-board .wr-notice{display:block;width:40px;height:20px;line-height:18px;background:#0b2a56;font-size:12px;color:#fff;font-weight:400;background-image:none;margin:0 auto}
+.notice_style .m07_down.btn-sm{background-color:#222222;font-size:13px;padding:2px 10px;border-color:#222222}
+.notice_style .m07_down.btn-sm .fa_sort{display:inline-block;width:6px;height:10px;background:url('/img/fa_sort.png') no-repeat;}
+.notice_style .m07_write.btn.btn-color{padding:2px 10px;font-size:13px}
+
+
+/* Q&A */
+.inquiry_style .list-board .wr-1 > span{width:60px;line-height:23px;color:#fff !important;border:0;position:unset;left:0;margin:0;font-weight:400 !important}
+.inquiry_style .list-board .wr-1 > span.grey{background:#bcbcbc}
+.inquiry_style .list-board .wr-1 > span.red{background:#0b2a56;color:#fff !important;border:0}
+.inquiry_style .list-board .list-body .wr-subject{padding-left:30px}
+.inquiry_style .list-board .wr-num{width:6%}
+.inquiry_style .list-board .wr-date{width:9%}
+.inquiry_style .list-board .wr-name{width:6%}
+.inquiry_style .list-board .wr-1{width:9%}
+
+/* 무용단소개 */
+.m08_02{}
+.m08_widget{position:relative}
+.m08_widget .widget_box{float:left}
+.m08_widget .left_box{width:61.619%}
+.m08_widget .left_box .carousel{position:unset}
+.m08_widget .map_btn_box{width:auto;height:80px;position:absolute;right:2.8%;bottom:0;margin:0}
+.m08_widget .map_btn_box .map_btn{width:161px;height:80px}
+.m08_widget .map_btn_box .map_btn .carousel-control{width:80px;height:80px;background-color:#000000}
+.m08_widget .map_btn_box .map_btn .carousel-control .glyphicon{border:0}
+.m08_widget .right_box{width:38.381%}
+
+@media(max-width:1890px){
+	.m08_widget .map_btn_box{height:60px;right:4%;bottom:3.3%}
+	.m08_widget .map_btn_box .map_btn{width:121px;height:60px}
+	.m08_widget .map_btn_box .map_btn .carousel-control{width:60px;height:60px}	
+}
+@media(max-width:991px){
+	/* 공통사항 */
+	.list-page{margin:0 0 45px !important}
+	.list-page.m06_page{margin:-50px 0 45px !important}
+	.pagination-sm>li>a, .pagination-sm>li>span{font-size:14px}
+
+	/* 탑배너 */
+	.sub_box{margin:42px 0 40px}
+	.sub_box.bo_table{margin:55px 0 50px}
+	.sub_text h1{font-size:23px}
+	.sub_tab .sub_menu{width:100%}
+	.sub_tab .dropdown{width:100%;text-align:center;margin-top:25px}
+	.sub_tab .dropdown .drop_a{font-size:14px;color:#222222;font-weight:500;border-bottom:1px solid #d2d2d2;display:block;width:100%;line-height:42px;position:relative;padding:0 15px}
+	.sub_tab .dropdown .drop_a .drop_arrow{display:block;position:absolute;right:15px;top:50%;transform:translateY(-50%)}
+	.sub_tab .dropdown .drop_a .drop_arrow img{height:4px}
+	.sub_tab .dropdown .dropdown_menu{width:100%;border-radius:0;left:0;top:43px;box-shadow:0 0 0;padding:6px 0;text-align:center}
+	.sub_tab .dropdown .dropdown_menu li a{padding:6px 15px}
+
+
+	/* 오시는 길 */
+	.map_iframe{width:100%;height:340px;float:left}
+	.map_box{margin-bottom:140px}
+	.map_box .add_txt{width:94%;height:190px;right:0;left:15px;top:unset;bottom:-25%;transform:none;padding-left:40px}
+	.map_box .add_txt .add_icon img{height:14px}
+	.map_box .add_txt .add_cont{margin:12px 0 30px}
+	.map_box .add_txt .add_cont h2{font-size:16px;font-weight:400}
+	.map_box .add_txt .api_btn a{width:125px;line-height:35px;background:url('/img/mmap_arrow.png') no-repeat;background-position:82% 50%;background-size:11%;padding:0 19px}
+
+	/* 학과활동 */
+	.calender_table{margin-bottom:35px}
+	.calender_table .calender-year-month{padding:0 35px}
+	.calender_table .calender-year-month a{font-size:21px}
+	.calender_table .cal_tit img{height:16px}
+	.calender_list .icon_box{margin-bottom:15px}
+	.calender_list .icon_box .icon_ul{text-align:center}
+	.calender_list .icon_box .icon_ul .icon_li{font-size:14px}
+	.calender_list .icon_box .icon_ul .icon_li:first-child{padding-left:10px}
+	.calender_list .icon_box .icon_ul .icon_li:last-child{padding-right:10px}
+	.calender_list .icon_box .icon_ul .icon_li span{margin-right:8px}
+
+	.schedule_calender th{font-size:13px;padding:11px 0px;text-align:center}
+	.schedule_calender td{padding:5px;font-size:13px;height:66px}
+	.schedule_calender td a{font-size:10px}		
+	.schedule_calender td a img{margin-right:3px;height:7px}
+	.schedule_calender td a.icon_a{margin-top:8px;width:40px}
+	.schedule_box{margin-bottom:50px;padding:20px 19px}
+	.schedule_box h4{font-size:14px}
+	.schedule_box .today_schedule{margin-top:12px;font-size:13px}
+
+
+	/* 게시판 공통 */
+	.board_style{margin-bottom:0}
+	.board_style .list_tsearch.list-tsearch{margin-bottom:20px}
+	.board_style .board_row{float:left;width:100%}
+	.board_style .board_row input, .board_style .board_row select{height:38px;line-height:36px;padding:0 15px}
+	.board_style .tsearch_box01 select{font-size:14px;background:url('/img/mtsearch_arrow.png') no-repeat 90% 55%;background-size:10%}
+	.board_style .tsearch_box02 input{height:36px;line-height:36px}
+	.board_style .tsearch_box02 button{right:15px;top:45%}
+	.board_style .tsearch_box02 button img{height:16px}
+
+	.board_style .div-head{padding:13px 0}
+	.board_style .div-head > span{font-size:14px}
+	.board_style .list-board .list-body li > div,
+	.board_style .list-board .list-body li > div a{font-size:13px}
+	.responsive .list-wrap .list-container.gallery_container .list-row{width:100% !important}
+
+	/* 무용과 행사 */
+	.m06_board .fix_gallery_content{margin-top:20px}
+	.m06_board .fix_gallery_content h5{font-size:14px}
+	.m06_board .fix_gallery_content p{margin-top:13px;margin-top:15px}
+
+	 /* 공지사항 */
+	.notice_style .list-board .wr-notice{display:inline-block;margin:0;text-align:center;color:#fff !important;margin-right:5px}
+	.notice_style .m07_down.btn-sm{padding:5px 15px}
+	.notice_style .m07_down.btn-sm .fa_sort{display:inline-block;width:6px;height:10px;background:url('/img/mfa_sort.png') no-repeat center;background-size:cover}
+	
+	 /* Q&A */
+	.inquiry_style .list-board .list-body .wr-subject{padding-left:0}
+	.inquiry_style .list-board .wr-1{width:25%}
+	.inquiry_btn.btn.btn-color{}
+
+
+	/* 무용단소개 */
+	.m08_widget .left_box{width:97%}
+	.m08_widget .map_btn_box{height:45px;right:12px;bottom:0}
+	.m08_widget .map_btn_box .map_btn{width:90px;height:45px}
+	.m08_widget .map_btn_box .map_btn .carousel-control{width:45px;height:45px;border:1px solid #313131;border-bottom:0}
+	.m08_widget .map_btn_box .map_btn .carousel-control:last-child{border-left:0}
+	.m08_widget .map_btn_box .map_btn .carousel-control .glyphicon{background-size:20% !important}
+
+
+
+}

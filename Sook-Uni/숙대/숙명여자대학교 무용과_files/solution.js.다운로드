@@ -1,0 +1,15 @@
+//메인에서 all_menu_btn 호버시
+/*
+$(".at-menu .menu-ul > li").on("click",function(){
+	var menu_index = $(this).index();
+	if(menu_index == 0){
+		if($(this).hasClass("active")){
+			$(".all_menu").slideUp(200);
+			$(this).removeClass("active");
+		}else{
+			$(".all_menu").stop().slideDown(300);
+			$(this).addClass("active");
+		}			
+	}
+});
+*/

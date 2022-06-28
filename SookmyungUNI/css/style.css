@@ -1,0 +1,128 @@
+:root {
+  --main-color: #e05312;
+  --text-color: rgb(8, 8, 8);
+  --heading1: 50px;
+  --heading2: 40px;
+  --basefont-size: 18px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  
+  list-style-type: none;
+  color: var(--text-color);
+  text-decoration: none;
+  
+}
+
+ul li {
+  display: inline-block;
+  margin: 10px;
+  
+}
+
+body {
+  font-size: var(--basefont-size);
+  font-family: 'NanumGothic', sans-serif;
+  color: var(--text-color);
+  width: 1440px;
+  height: 2075px;
+}
+
+h1 {
+  font-size: var(--heading1);
+}
+
+
+h2 {
+  font-size: var(--heading2);
+}
+
+html, body {
+  height: 100%;
+}
+
+#logo {
+  float: left;
+  position: absolute;
+  width: 148px;
+  height: 49px;
+  margin-left: 20px;
+  margin-top: 25px;
+  margin-bottom: 26px;
+}
+
+#list1 {
+  float: left;
+  position: relative;
+  left: 242px;
+  top: 25px;
+  list-style-type: none;
+  
+}
+
+#list2 {
+  position: relative;
+  left: 650px;
+  right: 20px;
+  top: 25px;
+}
+
+#main-img {
+  padding-top: 60px;
+
+}
+
+#mian-img p {
+  border: 1px solid black;
+  color: white;
+  font-size: 47px;
+}
+
+.container .col {
+  float: left;
+  position: relative;
+  margin-right: 0;
+  background-size: cover;
+  width: 335px;
+  height: 386px;
+}
+
+.container section {
+  margin: 20px;
+}
+
+#notice, #notice2, #notice3 {
+  float: left;
+  position: relative;
+  margin-right: 0;
+  padding-top: 50px;
+  border: 1px solid black;
+  width: 450px;
+  height: 245px;
+  text-align: center;
+}
+
+.banner #in, .banner #face {
+  float: right;
+  position: absolute;
+}
+
+.noti {
+  width: 100px;
+  height: 75;
+}
+
+.notit p {
+  padding-top: 20px;
+}
+
+.banner {
+  padding-left: 0;
+}

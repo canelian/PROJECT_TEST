@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내장객체</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <style>
+    .large-device {
+      background-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <h1>innerWidth, innerHeight - 윈도우 창크기</h1>
+  <p>
+    width: <span class="widthInfo">0</span>
+    height: <span class="heightInfo">0</span>
+  </p>
+  <script>
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+    $('.widthInfo').html(width);
+    $('.heightInfo').html(height);
+    
+    // document.write(`width =  ${width}, height = ${height}`);
+
+    $(window).on('resize', function() {
+      let width = window.innerWidth;
+      let height = window.innerHeight;
+      $('.widthInfo').html(width);
+      $('.heightInfo').html(height);
+      if(width >= 768) {
+        $('body').addClass('large-device');
+      } else {
+        $('body').removeClass('large-device');
+      }
+    // console.log(`width =  ${width}, height = ${height}`);
+    })
+  </script>
+
+  <h2>디바이스 정보 구하기 - navigator.userAgent</h2>
+  <script>
+    let agent = navigator.userAgent;
+    document.write(`<br>agent = ${agent}`);
+
+    let appName = navigator.appName;
+    document.write(`<br>appName = ${appName}`);
+
+    // paltform
+    let paltform = navigator.platform;
+    document.write(`<br>plaform = ${paltform}`);
+  </script>
+</body>
+</html>

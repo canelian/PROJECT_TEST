@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+/* 팝업레이어 */
+#hd_pop .hd_pops{border:1px solid #122b27}
+#hd_pop .hd_pops_footer{padding:0; border-top:1px solid #17342f; background:#fff; text-align:center}
+#hd_pop .hd_pops_footer button{width:65%; margin:0; padding:10px 0 ; background:#fff; font-weight:500; font-size:14px; color:#333}
+#hd_pop .hd_pops_footer button + button{width:35%; margin-left:-4px; border-left:1px solid #17342f}

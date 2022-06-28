@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="오감소프트">
+<meta name="Author" content="오감소프트">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<title>페이지를 찾을 수 없습니다.</title>
+<style>
+	html, body {
+		padding: 0;
+		margin: 0;
+	} 
+
+	@font-face {
+	  font-family: 'S-CoreDream-1Thin';
+	  src: url('/font/S-CoreDream-1Thin.eot');
+	  src: url('/font/S-CoreDream-1Thin.eot?#iefix') format('embedded-opentype'),
+		   url('/font/S-CoreDream-1Thin.svg#S-CoreDream-6Bold') format('svg'),
+		   url('/font/S-CoreDream-1Thin.woff') format('woff');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+	@font-face {
+	  font-family: 'S-CoreDream-2ExtraLight';
+	  src: url('/font/S-CoreDream-2ExtraLight.eot');
+	  src: url('/font/S-CoreDream-2ExtraLight.eot?#iefix') format('embedded-opentype'),
+		   url('/font/S-CoreDream-2ExtraLight.svg#S-CoreDream-6Bold') format('svg'),
+		   url('/font/S-CoreDream-2ExtraLight.woff') format('woff');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+	@font-face {
+	  font-family: 'S-CoreDream-3Light';
+	  src: url('/font/S-CoreDream-3Light.eot');
+	  src: url('/font/S-CoreDream-3Light.eot?#iefix') format('embedded-opentype'),
+		   url('/font/S-CoreDream-3Light.svg#S-CoreDream-6Bold') format('svg'),
+		   url('/font/S-CoreDream-3Light.woff') format('woff');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+	@font-face {
+	  font-family: 'S-CoreDream-4Regular';
+	  src: url('/font/S-CoreDream-4Regular.eot');
+	  src: url('/font/S-CoreDream-4Regular.eot?#iefix') format('embedded-opentype'),
+		   url('/font/S-CoreDream-4Regular.svg#S-CoreDream-6Bold') format('svg'),
+		   url('/font/S-CoreDream-4Regular.woff') format('woff');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+	@font-face {
+	  font-family: 'S-CoreDream-5Medium';
+	  src: url('/font/S-CoreDream-5Medium.eot');
+	  src: url('/font/S-CoreDream-5Medium.eot?#iefix') format('embedded-opentype'),
+		   url('/font/S-CoreDream-5Medium.svg#S-CoreDream-6Bold') format('svg'),
+		   url('/font/S-CoreDream-5Medium.woff') format('woff');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+	@font-face {
+	  font-family: 'S-CoreDream-6Bold';
+	  src: url('/font/S-CoreDream-6Bold.eot');
+	  src: url('/font/S-CoreDream-6Bold.eot?#iefix') format('embedded-opentype'),
+		   url('/font/S-CoreDream-6Bold.svg#S-CoreDream-6Bold') format('svg'),
+		   url('/font/S-CoreDream-6Bold.woff') format('woff');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+	@font-face {
+	  font-family: 'S-CoreDream-8Heavy';
+	  src: url('/font/S-CoreDream-8Heavy.eot');
+	  src: url('/font/S-CoreDream-8Heavy.eot?#iefix') format('embedded-opentype'),
+		   url('/font/S-CoreDream-8Heavy.svg#S-CoreDream-6Bold') format('svg'),
+		   url('/font/S-CoreDream-8Heavy.woff') format('woff');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+	@font-face {
+	  font-family: 'S-CoreDream-9Black';
+	  src: url('/font/S-CoreDream-9Black.eot');
+	  src: url('/font/S-CoreDream-9Black.eot?#iefix') format('embedded-opentype'),
+		   url('/font/S-CoreDream-9Black.svg#S-CoreDream-6Bold') format('svg'),
+		   url('/font/S-CoreDream-9Black.woff') format('woff');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+	
+	
+
+	.page-content { 
+		text-align:center; 
+		padding: 350px 0; 
+	}
+
+	.page-content h1 {
+		font-size: 48px;
+		word-spacing: 4px;
+		font-family: 'S-CoreDream-6Bold';
+		color: #4c4c4c;
+		margin: 0;
+		padding: 0;
+	}
+
+	.page-content h2 {
+		font-size: 40px;
+		word-spacing: 4px;
+		font-family: 'S-CoreDream-6Bold';
+		color: #4794da;
+		margin: 0;
+		padding: 50px 0 0 0;
+	}
+	.page-content h3 {
+		font-size: 28px;
+		word-spacing: 4px;
+		font-family: 'S-CoreDream-6Bold';
+		color: #4c4c4c;
+		margin: 0;
+		padding: 0;
+	}
+	
+	.page-content .go_box {
+		padding-top: 50px;
+	}
+
+	.page-content .go_box a.go_btn {
+		border: solid 1px #4d92d5;
+		color: white;
+		background: #4d92d5;
+		padding: 10px;
+		border-radius: 13px;
+		text-decoration:none;
+	}
+
+	@media screen and (max-width: 768px) {
+		.page-content h1 {
+			font-size: 36px;
+			word-spacing: 4px;
+		}
+
+		.page-content h2 {
+			font-size: 26px;
+			word-spacing: 4px;
+		}
+		.page-content h3 {
+			font-size: 18px;
+			word-spacing: 4px;
+		}
+	}
+</style>
+</head>
+<body>
+	<div class="page-content">
+		<div>
+			<h1>404 ERROR</h1>
+			<h3>홈페이지에서 해당 경로를 찾을 수 없습니다.</h3>
+			<h2>맞춤형 홈페이지 제작 전문 오감소프트</h2>
+		</div>
+		
+		<div class="go_box">
+			<a href="http://fivesense.co.kr" class="go_btn">오감소프트 바로가기</a>
+		</div>
+	</div>
+</body>
+</html>

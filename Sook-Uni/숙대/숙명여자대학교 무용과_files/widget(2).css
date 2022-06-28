@@ -1,0 +1,89 @@
+.modal_cart{position:fixed; top:50%; left:50%; width:360px; max-width:100%; margin:0 auto; z-index:30; transform:translate(-50%, -50%); background:#fff; display:none;}
+.modal_cart_bg{position:fixed; width:100%; height:100%; background:rgba(0,0,0,0.4); z-index:29; left:0; top:0; display:none;}
+.modal_cart .modal_cart_close{position:absolute; right:20px; top:20px;}
+.modal_cart .modal_cart_content{padding:40px 35px;}
+
+#FrameWrap .modal_cart_head{margin-bottom:20px; border-bottom:1px solid #000000; padding-bottom:15px;}
+#FrameWrap .modal_cart_head h5{font-size:18px; font-weight:500; color:#333333;}
+
+#FrameWrap .modal_cont_img_box{width:100%; display:table; margin-bottom:20px; padding-bottom:20px; border-bottom:1px solid #e5e5e5;}
+#FrameWrap .modal_cont_img_box .left_img_box{width:100px; display:table-cell; vertical-align:middle; border:1px solid #e5e5e5;}
+#FrameWrap .modal_cont_img_box .left_img_box img{width:100%;}
+#FrameWrap .modal_cont_img_box .right_info_box{width:calc(100% - 100px); padding-left:20px; display:table-cell; vertical-align:middle;}
+#FrameWrap .modal_cont_img_box .right_info_box .modal_cont_table > div.left_text{width:80px;}
+#FrameWrap .modal_cont_img_box .right_info_box .modal_cont_table > div.right_info{width:calc(100% - 80px);}
+#FrameWrap .modal_cont_img_box .modal_cont_table_box{padding-bottom:0; margin-bottom:0; border-bottom:0;}
+
+#FrameWrap .modal_cont_table_box{padding-bottom:20px; margin-bottom:20px; border-bottom:1px solid #e5e5e5;}
+#FrameWrap .modal_cont_table_box .modal_cont_table{width:100%; display:table; margin-bottom:20px;}
+#FrameWrap .modal_cont_table_box .modal_cont_table:last-child{margin-bottom:0;}
+#FrameWrap .modal_cont_table_box .modal_cont_table > div{display:table-cell; vertical-align:middle;}
+#FrameWrap .modal_cont_table_box .modal_cont_table > div.left_text{width:120px; font-weight:500; color:#333333; font-size:14px;}
+#FrameWrap .modal_cont_table_box .modal_cont_table > div.right_info{font-size:14px; color:#666666; width:calc(100% - 120px);}
+#FrameWrap .modal_cont_table_box .modal_cont_table > div.right_info select{width:100%; height:35px; line-height:35px; color:#666; outline:none; box-shadow:none; border:1px solid #d2d2d2; padding-left:5px;}
+
+#FrameWrap .modal_cont_table_box .modal_cont_table.select{margin-bottom:10px;}
+#FrameWrap .modal_cont_table_box .modal_cont_table.select:last-child{margin-bottom:0;}
+#FrameWrap .modal_cont_table_box .modal_cont_table.select label { width:100px; float:left; font-weight:normal; font-size: 12px; height:30px; line-height:30px; margin-bottom:0; display:block; margin-bottom:10px;}
+#FrameWrap .modal_cont_table_box .modal_cont_table.select select { width:calc(100% - 100px); float:left; height:30px; line-height:30px; margin-bottom:10px; border:1px solid #e5e5e5; outline:none; box-shadow:none;}
+
+#FrameWrap .modal_quantity{display:table; width:100%; border-bottom:1px solid #e5e5e5; padding-bottom:20px; margin-bottom:20px;}
+#FrameWrap .modal_quantity_name{font-size:14px; color:#666666; width:100%; margin-bottom:10px;}
+#FrameWrap .modal_quantity > div{display:table-cell; vertical-align:middle;}
+#FrameWrap .modal_quantity > div.left_quantity{width:120px; font-size:14px; font-weight:500; color:#333;}
+#FrameWrap .modal_quantity > div.right_quantity{width:calc(100% - 120px); overflow:hidden;}
+#FrameWrap .modal_quantity > div.right_quantity > input{display:block; width:60%; border:1px solid #e5e5e5; outline:none; box-shadow:none; height:35px; line-height:35px; font-size:14px; padding-left:10px; color:#333; float:left;}
+#FrameWrap .modal_quantity > div.right_quantity > div.modal_quantity_btn{float:left; width:40%; display:table; table-layout:fixed;}
+#FrameWrap .modal_quantity > div.right_quantity > div.modal_quantity_btn > button{display:table-cell; outline:none; box-shadow:none; width:100%; border:1px solid #e5e5e5; border-left:0;height:35px; line-height:35px; background:none; position:relative;}
+#FrameWrap .modal_quantity > div.right_quantity > div.modal_quantity_btn > button span{color:#666; font-size:14px; line-height:35px;}
+#FrameWrap .modal_quantity > div.right_quantity > div.modal_quantity_btn > button.modal_delete span{font-size:12px;}
+/*
+#FrameWrap .modal_quantity > div.right_quantity > div.modal_quantity_btn > button::after{position:absolute; left:50%; top:50%; transform:translate(-50%, -50%); color:#333; font-size:14px;}
+#FrameWrap .modal_quantity > div.right_quantity > div.modal_quantity_btn > button.modal_plus::after{content:"+";}
+#FrameWrap .modal_quantity > div.right_quantity > div.modal_quantity_btn > button.modal_minus::after{content:"-";}
+#FrameWrap .modal_quantity > div.right_quantity > div.modal_quantity_btn > button.modal_delete::after{content:"x";}
+*/
+#FrameWrap .modal_total_price{width:100%; display:table; }
+#FrameWrap .modal_total_price > div{display:table-cell; vertical-align:middle;}
+#FrameWrap .modal_total_price > div.left_text{width:120px; font-weight:500; color:#333333; font-size:16px;}
+#FrameWrap .modal_total_price > div.right_price{width:calc(100% - 120px); color:#333333; font-size:16px; text-align:right;}
+#FrameWrap .modal_total_price > div.right_price span.real_price{font-size:20px; font-weight:600;}
+#FrameWrap .modal_btn{overflow:hidden; width:100%; margin-top:20px;}
+#FrameWrap .modal_btn > input{display:block; float:left; width:49%; border:1px solid #a1a1a1; font-size:16px; color:#222222; font-weight:500; text-align:center; height:45px; line-height:45px; background:#fff;}
+#FrameWrap .modal_btn > input.cart_btn{margin-right:2%;}
+#FrameWrap .modal_btn > input.purchase_btn{background:#ffba00; border:1px solid #ffba00; color:#fff;}
+#FrameWrap .modal_naver{border-top:1px solid #aaaaaa; margin-top:20px; display:none;}
+
+@media (max-width:991px){
+	.modal_cart{height:92vh; overflow:hidden; overflow-y:scroll; width:calc(100% - 30px);}
+	.modal_cart .modal_cart_content{padding:30px 15px;}
+	.modal_cart .modal_cart_content .modal_cart_head{margin-bottom:10px; padding-bottom:10px;}
+	.modal_cart .modal_cart_content .modal_cart_head h5{font-size:16px;}
+
+	#FrameWrap .modal_cont_img_box{ margin-bottom:10px; padding-bottom:10px;}
+	#FrameWrap .modal_cont_img_box .left_img_box{width:80px; display:table-cell; vertical-align:middle; border:1px solid #e5e5e5;}
+	#FrameWrap .modal_cont_img_box .left_img_box img{width:100%;}
+	#FrameWrap .modal_cont_img_box .right_info_box{width:calc(100% - 80px); padding-left:10px; display:table-cell; vertical-align:middle;}
+	#FrameWrap .modal_cont_img_box .right_info_box .modal_cont_table > div.left_text{width:70px;}
+	#FrameWrap .modal_cont_img_box .right_info_box .modal_cont_table > div.right_info{width:calc(100% - 70px);}
+	#FrameWrap .modal_cont_img_box .modal_cont_table_box{padding-bottom:0; margin-bottom:0; border-bottom:0;}
+
+	#FrameWrap .modal_cont_table_box{padding-bottom:10px; margin-bottom:10px;}
+	#FrameWrap .modal_cont_table_box .modal_cont_table{margin-bottom:10px;}
+	#FrameWrap .modal_cont_table_box .modal_cont_table > div.left_text{width:100px; font-size:12px;}
+	#FrameWrap .modal_cont_table_box .modal_cont_table > div.right_info{width:calc(100% - 100px); font-size:12px;}
+	#FrameWrap .modal_cont_table_box .modal_cont_table > div.right_info select{height:30px; line-height:30px; font-size:12px;}
+	#FrameWrap .modal_quantity_name{font-size:12px; margin-bottom:5px;}
+	#FrameWrap .modal_quantity{padding-bottom:10px; margin-bottom:10px;}
+	#FrameWrap .modal_quantity > div.left_quantity{width:100px; font-size:12px;}
+	#FrameWrap .modal_quantity > div.right_quantity{width:calc(100% - 100px);}
+	#FrameWrap .modal_quantity > div.right_quantity > input{height:30px; line-height:30px; width:50%; font-size:12px;}
+	#FrameWrap .modal_quantity > div.right_quantity > div.modal_quantity_btn{width:50%;}
+	#FrameWrap .modal_quantity > div.right_quantity > div.modal_quantity_btn > button{height:30px; line-height:30px;}
+	#FrameWrap .modal_quantity > div.right_quantity > div.modal_quantity_btn > button span{line-height:30px; position:relative; /* top:-2px; */}
+	#FrameWrap .modal_total_price > div.left_text{width:100px; font-size:14px;}
+	#FrameWrap .modal_total_price > div.right_price{width:calc(100% - 100px); font-size:14px;}
+	#FrameWrap .modal_total_price > div.right_price span.real_price{font-size:18px;}
+	#FrameWrap .modal_btn{margin-top:10px;}
+	#FrameWrap .modal_btn > input{height:40px; line-height:40px; font-size:14px;}
+}
