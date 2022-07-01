@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ani-action</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <style>
+    body {
+      background-color: darkblue;
+      overflow: hidden;
+    }
+
+    .witch {
+      width: 300px;
+      position: absolute;
+      left: 30%;
+      right: 40%;
+      top: 50%;
+    }
+
+    .witch.play {
+      animation-name: witch;
+      animation-duration: 3s;
+    }
+
+    @keyframes witch {
+      0% {
+        transform: translate(0px, 0px)
+        scale(1,1);
+        opacity: 1;
+      }
+      100%{
+        transform: translate(1000px, -100px)
+        scale(0,0);
+        opacity: 0;
+      }
+    }
+
+    .moon {
+      position: fixed;
+      width: 200px;
+      height: 200px;
+      background-color: rgb(255, 255, 0);
+      border-radius: 50%;
+      right: 100px;
+      top: 150px;
+      box-shadow: 0 0 16px rgba(255, 255, 255, 1);
+    }
+
+    /* 마녀 아이들링 */
+    .witch_idle {
+      animation-name: witch_idle;
+      animation-iteration-count: infinite;
+      animation-duration: 1s;
+      animation-direction: alternate;
+    }
+
+    @keyframes witch_idle {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(20px);
+      }
+    }
+
+    h1 {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>달 그리고 마녀</h1>
+  <div class="witch-box">
+    <p class="moon"></p>
+    <img class="witch witch_idle" src="./The Which.png" alt="마녀">
+  </div>
+  <script>
+    $('.witch').click(function(){
+      $(this).addClass('play');
+    });
+
+    $('.moon').click(function(){
+      $('.witch').removeClass('play');
+    });
+  </script>
+</body>
+</html>

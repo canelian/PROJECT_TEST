@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 1000px;
+  height: 500px;
+  outline: 2px solid #333; 
+  position: relative;
+  margin: 0 auto; /*중앙으로?*/
+}
+
+.slider > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#gallery, .indicator, .arrow-ul {
+  text-align: center;
+}
+
+#gallery h2 {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+/*
+  현재이미지 fadeIn
+  나머지 이미지 face
+*/
+
+.prevBtn, .nextBtn {
+  padding: 5px;
+  margin: 10px 0;
+}

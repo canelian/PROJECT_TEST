@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery-effect</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <h1>show, toggle</h1>
+  <img class="img" src="https://placeimg.com/300/200/nature" alt="1">
+  <div>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="toggle">toggle</button>
+  </div>
+  <script>
+    $(function() {
+      // hide(재생기산ms, easing)
+      $('#hide').on('click', function(){
+        $('.img').hide();
+      });
+
+      // show()
+      $('#show').on('click', function() {
+        $('.img').show(1000);
+      });
+
+      // toggle()
+      $('#toggle').on('click', function() {
+        $('.img').toggle(1000);
+      })
+    })
+  </script>
+
+  <h2>fadeIn, fadeOut, fadeToggle</h2>
+  <img class="img2" src="https://placeimg.com/300/200/arch" alt="2">
+  <div>
+    <button id="fade-in">fade-In</button>
+    <button id="fade-out">fade-Out</button>
+    <button id="fade-toggle">fade-toggle</button>
+  </div>
+  <div>
+    <button id="fade-to-0">fade 0</button>
+    <button id="fade-to-5">fade 0.5</button>
+    <button id="fade-to-1">fade 1</button>
+  </div>
+  <script>
+    $(function() {
+      $('#fade-out').on('click', function(){
+        $('.img2').fadeOut();
+      });
+      $('#fade-In').on('click', function(){
+        $('.img2').fadeIn();
+      });
+      $('#fade-toggle').on('click', function(){
+        $('.img2').fadeToggle();
+      });
+
+      // fadeTo(재생시간, opacity) - 불투명도만 조정
+      $('#fade-to-0').on('click', function(){
+        $('.img2').fadeTo(1000, 0);
+      });
+      $('#fade-to-5').on('click', function(){
+        $('.img2').fadeTo(1000, 0.5);
+      });
+      $('#fade-to-1').on('click', function(){
+        $('.img2').fadeTo(1000, 1);
+      });
+    });
+  </script>
+
+  <section id="gallery">
+    <img class="img3" src="https://placeimg.com/300/200/arch/grayscale" alt="3">
+  </section>
+  <div>
+    <button class="btn" data-opacity="0">0</button>
+    <button class="btn" data-opacity="0.3">0.3</button>
+    <button class="btn" data-opacity="0.6">0.6</button>
+    <button class="btn" data-opacity="1">1</button>
+  </div>
+  <script>
+    $(function() {
+    $('.btn').on('click', function(){
+      let opacity = $(this).attr('data-opacity');
+        console.log(opacity);
+        $('#gallry img').fadeTo(1000, opacity);
+      });
+    });
+  </script>
+
+  <h2>Sliding Effect - slidDown, slideUp, slideToggle</h2>
+  <div class="img-box">
+    <img src="https://placeimg.com/300/200/nature/sepia" alt="4" class="img4">
+  </div>
+  <button id="slide-up">slideUp</button>
+  <button id="slide-down">slideDown</button>
+  <button id="slide-toggle">slideToggle</button>
+  
+  <script>
+    $(function() {
+      $('#slide-up').click(function(){
+        $('.img4').slideUp();
+      });
+      $('#slide-down').click(function(){
+        $('.img4').slideDown();
+      });
+      $('#slide-toggle').click(function(){
+        $('.img4').slideToggle();
+      });
+    });
+  </script>
+</body>
+</html>
