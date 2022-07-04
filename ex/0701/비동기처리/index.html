@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>비동기처리</title>
+</head>
+<body>
+  <script>
+    // 동기적인 처리 - 순서대로
+    /*console.log('주문1');
+    console.log('주문2');
+    console.log('주문3');*/
+
+    // 비동기적 처리
+    /*setTimeout(function(){
+      console.log('서버에서 데이터를 불러옴 3초걸림', 3000);
+    });*/
+
+    /*console.log('주문 2 완료');*/
+    /*console.log('화면 처리');*/
+
+    /* fetch(서버주소)
+      ..then(data 받아서 json으로 변환).then(data) */
+    fetch('https://raw.githubusercontent.com/csslick/animal-info/master/animal.json').then(function(res){
+      return res.json();
+    })
+    .then(function(data){
+      // 최종 데이터 출력(object)
+      console.log(data);
+    });
+  </script>
+</body>
+</html>
