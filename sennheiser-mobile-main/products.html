@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>제품 보기</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+  <!-- 제품 불러오는 코드 -->
+  <script src="js/products.js"></script>
+</head>
+<body id="products">
+  <header id="main-header">
+    <h1>
+      <a href="./">
+        <img src="images/logo.svg" alt="젠하이저">
+      </a>
+    </h1>
+    <nav id="icon-menu">
+      <a href="#"><i class="bi bi-bag"></i></a>
+      <a href="#"><i class="bi bi-search"></i></a>
+      <button id="toggle-btn"><i class="bi bi-list"></i></button>
+    </nav>
+    <nav id="gnb">
+      <ul>
+        <li><a href="about.html">젠하이저 소개</a></li>
+        <li><a href="products.html">신상품</a></li>
+        <li><a href="products.html">헤드폰</a></li>
+        <li><a href="#">고객지원</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">주문조회</a></li>
+      </ul>
+      <button id="btn-close"><i class="bi bi-x"></i></button>
+    </nav>
+  </header>
+
+  <main>
+    <header>
+      <div class="container">
+        <h1>제품 보기</h1>
+      </div>   
+      <div class="category-menu">
+        <a class="btn-small" href="products.html?category=all">전체보기</a>
+        <a class="btn-small" href="products.html?category=wireless">wireless</a>
+        <a class="btn-small" href="products.html?category=무선헤드폰">무선헤드폰</a>
+        <a class="btn-small" href="products.html?category=유선헤드폰">유선헤드폰</a>
+        <a class="btn-small" href="products.html?category=기타">기타</a>
+      </div>
+    </header>
+
+    <div class="main">
+      <!-- 제품 리스트 -->
+      <div class="container">
+        <div class="row products">
+          <!-- <div class="product">
+            <a href="detail.html">
+              <img src="images/cx plus true wireless k.webp" alt="">
+              <div class="info">
+                <span class="category">Wireless</span>
+                <p class="title">MOMEN TUM True Wireless 3</p>
+                <p class="price"><span>₩</span>170,900</p>
+              </div>
+            </a>
+          </div>product -->
+        </div><!-- row -->
+      </div>
+    </div><!-- main -->
+  </main>
+
+  <footer id="main-footer">
+    <nav class="sns-link">
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="bi bi-youtube"></i></a>
+    </nav>
+    <nav class="footer-menu">
+      <a href="#">이용약관</a><span>|</span>
+      <a href="#"><strong>개인정보취급방침 </strong></a>
+    </nav>
+    <p class="copy">© 2022 Sonova Consumer Hearing GmbH</p>
+  </footer>
+
+</body>
+</html>

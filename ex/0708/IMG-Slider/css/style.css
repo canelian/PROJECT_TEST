@@ -1,0 +1,34 @@
+@import url('./reset.css');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+:root {
+  --slider-width: 1200px;
+  /*
+  --main-color: #4877CD;
+  --bg-color1: #333;
+  --bg-color2: #4D4D4D;
+  --text-color1: #fff;
+  --text-color2: #000;
+  --header-height: 60px;
+  */
+}
+
+.slider {
+  outline: 2px solid red;
+  width: var(--slider-width);
+  height: 600px;
+  
+}
+
+.sliders {
+  /*크기 = width x 이미지 장수*/
+  width: calc(var(--slider-width) * 3);
+  outline: 4px solid blue;
+  display: flex;
+  /*이미지 위치 변경*/
+  transform: translateX(0);
+  /*트랜지션*/
+  transition-duration: 0.4s;
+}
+
+

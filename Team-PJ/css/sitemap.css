@@ -1,0 +1,53 @@
+:root {
+  --mainbg-color: white;
+  --subbg1-color: #0C2D83;
+  --subbg2-color: #6D81B5;
+  --text1-color: black;
+  --text2-color: white;
+}
+
+.map {
+  font-family: 'Noto Sans-KR', sans-serif;
+  background: #ccc;
+}
+
+p, .a {
+  color: var(--text2-color);
+}
+
+p {
+  width: 150px;
+  background: var(--subbg1-color);
+  font-size: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+#earphone, #headphone, #turns, #mike, #support {
+  width: 150px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: absolute;
+  left: 20px;
+  top: 100px;
+  
+}
+
+.a {
+  border: 1px solid red;
+  background: var(--subbg2-color);
+  color: var(--text2-color);
+}
+
+.b {
+  border: 1px solid red;
+  
+}
+
+#headphone, #turns, #mike, #support {
+  float: left;
+}
